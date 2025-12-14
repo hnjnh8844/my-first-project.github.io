@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="keywords" content="Комп'ютерні шрифти">
+<meta name="description" content="Практична робота №13">
+<meta name="author" content="Sanzharovska Daria">
+    <title>Трансформації CSS3</title>
+
+<style>
+.button {
+    width: 150px;
+    height: 50px;
+    display: inline-block;
+    background: linear-gradient(to top, #BA3909, #AF1D15);
+    border-radius: 15px;
+    border: 3px solid #580000;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.5);
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    margin: 15px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.scale1:hover { transform: scale(0.7); }
+.scale2:hover { transform: scale(1.2); }
+.scale3:hover { transform: scale(1.5); }
+.scale4:hover { transform: scale(0.5); }
+
+.trans1:hover { transform: translateX(30px); }
+.trans2:hover { transform: translateY(-30px); }
+.trans3:hover { transform: translate(40px, 40px); }
+.trans4:hover { transform: translate(-40px, 20px); }
+
+.rot1:hover { transform: rotate(10deg); }
+.rot2:hover { transform: rotate(30deg); }
+.rot3:hover { transform: rotate(-20deg); }
+.rot4:hover { transform: rotate(45deg); }
+
+.skew1:hover { transform: skew(10deg, 0deg); }
+.skew2:hover { transform: skew(0deg, 15deg); }
+.skew3:hover { transform: skew(10deg, 10deg); }
+.skew4:hover { transform: skew(-15deg, 5deg); }
+
+.origin1:hover { transform-origin: left top; transform: rotate(20deg); }
+.origin2:hover { transform-origin: right top; transform: rotate(20deg); }
+.origin3:hover { transform-origin: left bottom; transform: rotate(20deg); }
+.origin4:hover { transform-origin: right bottom; transform: rotate(20deg); }
+
+</style>
+</head>
+<body>
+
+<h2>1-й ряд — Масштабування (scale)</h2>
+<div class="button scale1">Кнопка1</div>
+<div class="button scale2">Кнопка2</div>
+<div class="button scale3">Кнопка3</div>
+<div class="button scale4">Кнопка4</div>
+
+<h2>2-й ряд — Зсув (translate)</h2>
+<div class="button trans1">Кнопка1</div>
+<div class="button trans2">Кнопка2</div>
+<div class="button trans3">Кнопка3</div>
+<div class="button trans4">Кнопка4</div>
+
+<h2>3-й ряд — Поворот (rotate)</h2>
+<div class="button rot1">Кнопка1</div>
+<div class="button rot2">Кнопка2</div>
+<div class="button rot3">Кнопка3</div>
+<div class="button rot4">Кнопка4</div>
+
+<h2>4-й ряд — Деформація (skew)</h2>
+<div class="button skew1">Кнопка1</div>
+<div class="button skew2">Кнопка2</div>
+<div class="button skew3">Кнопка3</div>
+<div class="button skew4">Кнопка4</div>
+
+<h2>5-й ряд — Точка трансформації (transform-origin)</h2>
+<div class="button origin1">Кнопка1</div>
+<div class="button origin2">Кнопка2</div>
+<div class="button origin3">Кнопка3</div>
+<div class="button origin4">Кнопка4</div>
+<footer>&copy; 2025 Санжаровська Дарія | КН-23, СТФК НУХТ |
+    <time>21-11-2025</time></footer>
+</body>
+</html>
